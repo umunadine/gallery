@@ -10,6 +10,18 @@ class Category(models.Model):
 
     def save_category(self):
         self.save()
+        
+    def delete_category(self):
+        self.delete()
+
+    def update_category(self, update):
+        self.name = update
+        self.save()
+
+    @classmethod
+    def get_category_id(cls, id):
+        category = Category.objects.get(pk = id)
+        return category
     
     
 
