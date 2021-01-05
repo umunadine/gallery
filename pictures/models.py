@@ -10,7 +10,7 @@ class Category(models.Model):
 
     def save_category(self):
         self.save()
-        
+
     def delete_category(self):
         self.delete()
 
@@ -18,9 +18,14 @@ class Category(models.Model):
         self.name = update
         self.save()
 
+    # @classmethod
+    # def get_category_id(cls, id):
+    #     category = Category.objects.get(pk = id)
+    #     return category
+
     @classmethod
-    def get_category_id(cls, id):
-        category = Category.objects.get(pk = id)
+    def search_by_title(cls,search_term):
+        category = cls.objects.filter(name__icontains=search_term)
         return category
     
     
