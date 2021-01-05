@@ -8,7 +8,7 @@
   {% if title %}
   <title>MyGallery - {{title}}</title>
   {% else %}
-    <title>Picnav</title>
+    <title>MyGallery</title>
   {% endif %}
 
   {% block styles %}
@@ -21,7 +21,9 @@
 </head>
 <body>
     {% include "navbar.html" %}
-    {% block content %}{%endblock%}
+    {% block content %}
+    <h1> Welcome to the Moringa Tribune</h1>
+    {%endblock%}
 
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
