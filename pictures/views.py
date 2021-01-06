@@ -20,15 +20,13 @@ def picture(request,category_name,image_id):
     return render(request,"gallery.html",{'title':title,"image":image, "locations":locations, "image_category":image_category})
 
 def search_by_cat(request):
-    title = 'Search'
+   
     if 'image_category' in request.GET and request.GET['image_category']:
         search_term = request.GET.get('image_category')
         found_results = Image.objects.filter(image_category__name=search_term)
         message = f"{search_term}"
-        print(search_term)
-        print(found_results)
 
-        return render(request, 'search.html',{'title':title,'search_term':search_term,'images': found_results, 'message': message})
+        return render(request, 'search.html',{'images': found_results, 'message': message})
     else:
         message = 'You havent searched for anything yet'
         return render(request, 'search.html',{"message": message})
@@ -38,4 +36,4 @@ def location_filter(request, image_location):
     location = Location.get_location_id(image_location)
     images = Image.filter_by_location(image_location)
     title = f'{location} Photos'
-    return render(request, 'location.html', {'title':title, 'images':images, 'locations':locations, 'location':location})
+    return render(request, 'location.html', {'images':images, 'locations':locations, 'location':location})
