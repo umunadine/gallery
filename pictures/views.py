@@ -17,7 +17,7 @@ def picture(request,category_name,image_id):
         image = Image.objects.get(id = image_id)
     except DoesNotExist:
         raise Http404()
-    return render(request,"picture.html",{'title':title,"image":image, "locations":locations, "image_category":image_category})
+    return render(request,"gallery.html",{'title':title,"image":image, "locations":locations, "image_category":image_category})
 
 def search_by_cat(request):
     title = 'Search'
