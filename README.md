@@ -13,21 +13,21 @@ MyGallery is a personal gallery application that displays photos for others to s
 4.View photos based on the location they were taken.
 
 ## Prerequisite
-Python3.6
-Django MVC framework
-HTML, CSS and Bootstrap
-JavaScript
-Postgressql
+Python3.6 <br />
+Django MVC framework<br />
+HTML, CSS and Bootstrap<br />
+JavaScript<br />
+Postgressql<br />
 Heroku
 
 ## Installation steps
-$ git clone 
-$ cd Gallery
-$ source virtual/bin/activate
-$ install dependancies that will create an environment for the app to run by running the command pip3 install -r requirements.txt
-$ Create the Database
-$ Run initial Migration
-$ Run the app with command python3.6 manage.py runserver
+$ git clone<br />
+$ cd Gallery<br />
+$ source virtual/bin/activate<br />
+$ install dependancies that will create an environment for the app to run by running the command pip3 install -r requirements.txt<br />
+$ Create the Database<br />
+$ Run initial Migration<br />
+$ Run the app with command python3.6 manage.py runserver<br />
 
 ## Contacts
 You can reach me at umutesinad3@gmail.com
