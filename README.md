@@ -7,9 +7,9 @@ The author is Umutesi Nadine
 MyGallery is a personal gallery application that displays photos for others to see.
 
 ### User stories
-1.View different photos that interest me.
-2.Click on a single photo to expand it and also view the details of the photo. 
-3.Search for different categories of photos. (ie. Travel, Food)
+1.View different photos that interest me.<br />
+2.Click on a single photo to expand it and also view the details of the photo. <br />
+3.Search for different categories of photos. (ie. Travel, Food)<br />
 4.View photos based on the location they were taken.
 
 ## Prerequisite
