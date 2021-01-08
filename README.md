@@ -21,7 +21,7 @@ Postgressql<br />
 Heroku
 
 ## Installation steps
-$ git clone<br />
+$ git clone https://github.com/umunadine/gallery <br />
 $ cd Gallery<br />
 $ source virtual/bin/activate<br />
 $ install dependancies that will create an environment for the app to run by running the command pip3 install -r requirements.txt<br />
