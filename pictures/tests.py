@@ -47,3 +47,5 @@ class LocationTestCLass(TestCase):
         location.update_location('Paris')
         location = Location.get_location_id(self.loc.id)
         self.assertTrue(location.name == 'Paris')
+
+
