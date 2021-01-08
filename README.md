@@ -22,7 +22,7 @@ Heroku
 
 ## Installation steps
 $ git clone https://github.com/umunadine/gallery <br />
-$ cd Gallery<br />
+$ cd gallery<br />
 $ source virtual/bin/activate<br />
 $ install dependancies that will create an environment for the app to run by running the command pip3 install -r requirements.txt<br />
 $ Create the Database<br />
